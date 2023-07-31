@@ -1,0 +1,128 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{ background: linear-gradient(to bottom right, #2a2a72, #009ffd); }
+      .container{ background-color: aliceblue; margin: 50px; } legend{
+      text-align: center; padding-top: 20px; font-size: 40px; font-weight: bold;
+      } .group{ display: flex; padding: 80px; } .form-group { margin-bottom:
+      20px; } .form-group label { display: block; margin-bottom: 5px;
+      font-weight: bold; } .form-group input { width: 550px; padding: 12px;
+      border: 1px solid #000000; border-radius: 5px; font-size: 16px; }
+      .form-group button { padding: 10px 20px; background-color: #4caf50; color:
+      #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;
+      } select{ height: 50px; width: 550px; font-size: 16px; }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <legend>JOB APPLICANTS REGISTRATION FORM</legend>
+      <form class="group" method="post" action="/person/register">
+        <div class="left">
+          <div class="form-group">
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="DOB">DOB:</label>
+            <input type="date" id="date" name="dob" required />
+          </div>
+          <div class="form-group">
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="skill">SKILLS:</label>
+            <input type="text" id="text" name="skills" required />
+          </div>
+          <div class="form-group">
+            <label for="experience">EXPERIENCE:</label>
+            <select required name="experience">
+              <option value="">Select Experience</option>
+              <option value="0 years">0 Years</option>
+              <option value="0-1 years">0-1 Years</option>
+              <option value="1-2 years">1-2 Years</option>
+              <option value="2-5 years">2-5 Years</option>
+              <option value="5+ years">5+ Years</option>
+            </select>
+            {{! <input type="text" id="experience" name="experience" required> }}
+          </div>
+          <div class="form-group">
+            <label for="github">GITHUB:</label>
+            <input type="text" id="github" name="github" required />
+          </div>
+        </div>
+        <div class="right">
+          <div class="form-group">
+            <label for="username">USERNAME:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="gender">GENDER:</label>
+            <select required name="gender">
+              <option value="">Select Experience</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">others</option>
+            </select>
+            {{! <input type="text" id="gender" name="gender" required> }}
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" required />
+          </div>
+          <div class="form-group">
+            <label for="job">JOB ROLE:</label>
+            <select id="job" name="job" required>
+              <option value="">Select a job role</option>
+              <option value="web-developer">Web Developer</option>
+              <option value="game-developer">Game Developer</option>
+              <option value="software-engineer">Software Engineer</option>
+              <option value="data-scientist">Data Scientist</option>
+              <option value="graphic-designer">Graphic Designer</option>
+              <option value="network-administrator">Network Administrator</option>
+              <option value="project-manager">Project Manager</option>
+              <option value="business-analyst">Business Analyst</option>
+              <option value="marketing-specialist">Marketing Specialist</option>
+              <option value="mobile-app-developer">Mobile App Developer</option>
+              <option value="UI-UX-designer">UI/UX Designer</option>
+              <option value="database-administrator">Database Administrator</option>
+              <option value="system-administrator">System Administrator</option>
+              <option value="frontend-developer">Frontend Developer</option>
+              <option value="backend-developer">Backend Developer</option>
+              <option value="full-stack-developer">Full Stack Developer</option>
+              <option value="devops-engineer">DevOps Engineer</option>
+              <option value="cybersecurity-analyst">Cybersecurity Analyst</option>
+              <option value="AI-machine-learning-engineer">AI/Machine Learning
+                Engineer</option>
+              <option value="cloud-architect">Cloud Architect</option>
+              <option value="IT-consultant">IT Consultant</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="social">OTHER SOCIAL:</label>
+            <input type="text" id="social" name="social" required />
+          </div>
+          <div class="form-group">
+            <label for="resume">RESUME (pdf):</label>
+            <input
+              type="file"
+              id="resume"
+              name="resume"
+              accept="application/pdf"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

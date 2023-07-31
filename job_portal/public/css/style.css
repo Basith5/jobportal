@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 15px;
+    background: linear-gradient(135deg,  #FA7128, aliceblue, #FA7128);
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.btn{
+    background-color: #112b94;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+}
+.content{
+    display: flex;
+    padding: 80px;
+}
+.left{
+    padding: 10px;
+    width: 60%;
+}
+.first{
+    font-size: 100px;
+    color: #112b94;
+    padding-bottom: 10px;
+}
+.second{
+    font-size: 50px;
+    color: #FA7128;
+    padding-bottom: 10px;
+}
+.third{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.btn-2{
+    padding: 20px;
+    padding-left: 200px;
+    margin-top: 20px;
+}
+.job{
+    color: white;
+    background-color: #FA7128;
+    font-size: 15px;
+    height: 35px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.hire{
+    color: white;
+    background-color: #FA7128;
+    font-size: 15px;
+    height: 35px;
+    width: 150px;
+    border-radius: 10px;
+}
+.right{
+    padding: 10px;
+    width: 40%;
+}
+.con-img{
+    height: 500px;
+    width: 500px;
+}
